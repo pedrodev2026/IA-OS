@@ -1,0 +1,19 @@
+[package]
+name = "ia-os"
+version = "0.1.0-alpha.1"
+edition = "2021"
+authors = ["IA-OS Developers"]
+license = "Apache-2.0"
+description = "IA-OS: Sistema Operacional Bare-Metal em Rust com Bootloader Limine"
+
+[dependencies]
+limine = "0.6.5"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+lto = true
+codegen-units = 1
+

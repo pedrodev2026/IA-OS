@@ -1,0 +1,26 @@
+# Build e dependências do Rust
+/target/
+
+# Diretório de build e imagens geradas (ISOs, imagens de disco)
+/build/
+*.iso
+*.img
+*.bin
+
+# Binários e repositórios externos locais de bootloaders
+/limine-bin/
+
+# Bloqueio de dependências do Cargo (mantido fora ou dentro conforme preferência para bare-metal)
+Cargo.lock
+
+# Arquivos temporários e de editores
+*.swp
+*.swo
+*~
+.DS_Store
+.vscode/
+.idea/
+
+# Logs e relatórios de emuladores
+qemu.log
+serial.log
